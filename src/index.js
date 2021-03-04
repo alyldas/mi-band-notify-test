@@ -1,3 +1,5 @@
+console.info("v1.0.1");
+
 document.getElementById("foo").addEventListener("click", function () {
   /*
   Make sure you are wearing the hr monitor, as it typically
@@ -15,14 +17,12 @@ document.getElementById("foo").addEventListener("click", function () {
   Pass the index of the hr, (2nd item in the Array buffer): val.getInt8(1)
   */
 
-  console.info("v1.0.1");
-
   const connect = async (props) => {
     console.clear();
     const device = await navigator.bluetooth.requestDevice({
       filters: [
         {
-          services: ["heartrate"]
+          acceptAllDevices: true
         }
       ],
       acceptAllDevices: false
