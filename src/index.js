@@ -1,4 +1,4 @@
-console.info("v1.0.1");
+console.info("v1.0.3");
 
 document.getElementById("foo").addEventListener("click", function () {
   /*
