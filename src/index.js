@@ -1,4 +1,4 @@
-console.info("v1.0.3");
+console.info("v1.0.4");
 
 document.getElementById("foo").addEventListener("click", function () {
   /*
@@ -21,9 +21,7 @@ document.getElementById("foo").addEventListener("click", function () {
     console.clear();
     const device = await navigator.bluetooth.requestDevice({
       filters: [
-        {
-          acceptAllDevices: true
-        }
+        {name: 'Mi Smart Band 5'},
       ],
       acceptAllDevices: false
     });
